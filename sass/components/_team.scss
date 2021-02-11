@@ -72,6 +72,7 @@
 }
 
 .team-social-link {
+  @extend %social-link;
   background-color: $color-light-main;
   &:hover,
   &:focus {
@@ -80,7 +81,7 @@
   }
 }
 
-.social-link {
+%social-link {
   display: flex;
   align-items: center;
   justify-content: center;
