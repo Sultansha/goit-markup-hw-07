@@ -93,6 +93,6 @@
   color: inherit;
   fill: currentColor;
 
-  transition: color var(--main-time) var(--main-timing-function),
-    background-color var(--main-time) var(--main-timing-function);
+  transition: color $time-main $timing-function-main,
+    background-color $time-main $timing-function-main;
 }
