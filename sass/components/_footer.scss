@@ -7,3 +7,9 @@
   letter-spacing: 0.06em;
   color: var(--hero-title-color);
 }
+
+.footer .social-link:hover,
+.footer .social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--hero-title-color);
+}

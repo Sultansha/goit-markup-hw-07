@@ -383,6 +383,108 @@ body {
   color: #ffffff;
 }
 
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #f5f4fa;
+}
+
+.team-title {
+  margin: 0 0 50px 0;
+  padding: 0;
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team-item {
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 3 * 30px) / 4);
+  background-color: #ffffff;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-card {
+  width: 100%;
+  padding: 30px 32px;
+}
+
+.team-name,
+.team-position {
+  font-size: 16px;
+}
+
+.team-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #212121;
+}
+
+.team-position {
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team .social-list {
+  color: #afb1b8;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-social-link {
+  background-color: #ffffff;
+}
+
+.team-social-link:hover, .team-social-link:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  fill: currentColor;
+  -webkit-transition: color var(--main-time) var(--main-timing-function), background-color var(--main-time) var(--main-timing-function);
+  transition: color var(--main-time) var(--main-timing-function), background-color var(--main-time) var(--main-timing-function);
+}
+
 .footer-email:hover,
 .footer-email:focus {
   color: #2196f3;
@@ -390,6 +492,12 @@ body {
 
 .follow-button {
   letter-spacing: 0.06em;
+  color: var(--hero-title-color);
+}
+
+.footer .social-link:hover,
+.footer .social-link:focus {
+  background-color: var(--accent-color);
   color: var(--hero-title-color);
 }
 
