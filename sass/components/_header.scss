@@ -1,3 +1,7 @@
+.header {
+  border-bottom: 1px solid $color-header-border;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -12,8 +16,4 @@
   justify-content: space-between;
   align-items: center;
   text-align: left;
-}
-
-.header {
-  border-bottom: 1px solid $color-header-border;
 }
