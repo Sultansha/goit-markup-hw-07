@@ -1,11 +1,9 @@
-.button {
-  &-hero {
-    @include button();
-  }
-  &-follow {
-    @include button();
-  }
-  &-modal {
-    @include button();
-  }
+.main-button {
+  @extend %main-button;
+  @include main-button-hover();
+}
+
+.main-button-no-hover {
+  @extend %main-button;
+  @include main-button-hover($color-accent);
 }

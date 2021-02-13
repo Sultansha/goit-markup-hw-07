@@ -24,6 +24,34 @@
   color: #212121;
 }
 
+.main-button, .main-button-no-hover {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 50px;
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  fill: currentColor;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -177,6 +205,15 @@ img {
   text-align: center;
 }
 
+/*  @media screen and (min-width: $mobile) and (max-width: $mobile-max) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    max-width: $tablet-min;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+  } */
 .nav {
   font-weight: 500;
   display: -webkit-box;
@@ -320,100 +357,12 @@ img {
   color: #ffffff;
 }
 
-.button-hero {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 200px;
-  height: 50px;
-  font-family: inherit;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  fill: currentColor;
-  background-color: #2196f3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-hero:hover, .button-hero:focus {
+.main-button:hover, .main-button:focus {
   background-color: #188ce8;
 }
 
-.button-follow {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 200px;
-  height: 50px;
-  font-family: inherit;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  fill: currentColor;
+.main-button-no-hover:hover, .main-button-no-hover:focus {
   background-color: #2196f3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-follow:hover, .button-follow:focus {
-  background-color: #188ce8;
-}
-
-.button-modal {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 200px;
-  height: 50px;
-  font-family: inherit;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  fill: currentColor;
-  background-color: #2196f3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-modal:hover, .button-modal:focus {
-  background-color: #188ce8;
 }
 
 .features-list {
@@ -1057,11 +1006,11 @@ img {
 }
 
 .list-buttons {
-  padding: 6px 22px;
   font-family: inherit;
   font-size: 16px;
   border: none;
   border-radius: 4px;
+  padding: 6px 22px;
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: inherit;
