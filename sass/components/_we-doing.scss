@@ -1,5 +1,5 @@
-.we-doing {
-  padding-bottom: 94px;
+.we-doing-list {
+  display: flex;
 }
 
 .we-doing-item {
@@ -9,19 +9,6 @@
   &:not(:last-child) {
     margin-right: 30px;
   }
-}
-
-.we-doing-title {
-  margin: 0 0 50px 0;
-  padding: 0;
-
-  color: $color-title-main;
-  font-weight: 700;
-  font-size: 36px;
-}
-
-.we-doing-list {
-  display: flex;
 }
 
 .we-doing-thumb {

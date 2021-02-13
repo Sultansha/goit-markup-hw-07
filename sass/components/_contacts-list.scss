@@ -2,7 +2,14 @@
   display: flex;
   align-items: center;
 }
-.contacts {
+
+.contacts-item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contacts-link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -16,12 +23,6 @@
   &:hover,
   &:focus {
     color: $color-accent;
-  }
-}
-
-.contacts-item {
-  &:not(:last-child) {
-    margin-right: 50px;
   }
 }
 

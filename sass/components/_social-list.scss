@@ -1,10 +1,13 @@
 .social-list {
-  display: flex;
+  &-team {
+    @include socialList($color-link-main);
+  }
+
+  &-footer {
+    @include socialList($color-light-main);
+  }
 }
 
-.team .social-list {
-  color: $color-link-main;
-}
 .social-item {
   width: 44px;
   height: 44px;
@@ -13,19 +16,23 @@
   }
 }
 
-%social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.social-link {
+  &-team {
+    @include socialLink($color-light-main);
 
-  border-radius: 50%;
+    &:hover,
+    &:focus {
+      background-color: $color-accent;
+      color: $color-light-main;
+    }
+  }
 
-  width: 100%;
-  height: 100%;
+  &-footer {
+    @include socialLink($background-color-footer-social-link);
 
-  color: inherit;
-  fill: currentColor;
-
-  transition: color $time-main $timing-function-main,
-    background-color $time-main $timing-function-main;
+    &:hover,
+    &:focus {
+      background-color: $color-accent;
+    }
+  }
 }

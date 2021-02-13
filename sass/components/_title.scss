@@ -1,0 +1,21 @@
+.title {
+  &-features-main {
+    @extend %titleMain;
+  }
+
+  &-we-doing {
+    @extend %titleMain;
+  }
+
+  &-team {
+    @extend %titleMain;
+  }
+
+  &-clients {
+    @extend %titleMain;
+  }
+
+  &-work-main {
+    @extend %titleMain;
+  }
+}

@@ -1,0 +1,37 @@
+.container {
+  &-header {
+    @include container(left);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-hero {
+    @include container();
+  }
+
+  &-features {
+    @include container(left);
+  }
+
+  &-we-doing {
+    @include container();
+  }
+
+  &-team {
+    @include container();
+  }
+
+  &-clients {
+    @include container();
+  }
+
+  &-footer {
+    @include container(left);
+    display: flex;
+    align-items: baseline;
+  }
+
+  &-work {
+    @include container();
+  }
+}

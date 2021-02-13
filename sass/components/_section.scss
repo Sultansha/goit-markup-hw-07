@@ -1,0 +1,23 @@
+.section {
+  &-features {
+    @include paddingVertical();
+  }
+
+  &-we-doing {
+    @include paddingVertical(0);
+  }
+
+  &-team {
+    @include paddingVertical();
+
+    background-color: $background-color-team;
+  }
+
+  &-clients {
+    @include paddingVertical();
+  }
+
+  &-work {
+    @include paddingVertical();
+  }
+}
