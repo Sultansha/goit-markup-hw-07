@@ -1,38 +1,23 @@
 .container {
+  @extend %container;
+
   &-header {
-    @include container(left);
+    @extend %container;
+    text-align: left;
     display: flex;
     justify-content: space-between;
   }
 
-  &-hero {
-    @include container();
-  }
-
   &-features {
-    @include container(left);
-  }
-
-  &-we-doing {
-    @include container();
-  }
-
-  &-team {
-    @include container();
-  }
-
-  &-clients {
-    @include container();
+    @extend %container;
+    text-align: left;
   }
 
   &-footer {
-    @include container(left);
+    @extend %container;
+    text-align: left;
     display: flex;
     align-items: baseline;
-  }
-
-  &-work {
-    @include container();
   }
 }
 

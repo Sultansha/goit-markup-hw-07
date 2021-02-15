@@ -1,17 +1,6 @@
-@mixin paddingVertical($paddingTop: 94px, $paddingBottom: 94px) {
+@mixin sectionPaddingVertical($paddingTop: 94px, $paddingBottom: 94px) {
   padding-top: $paddingTop;
   padding-bottom: $paddingBottom;
-}
-
-@mixin container($textAlign: center) {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  margin-right: auto;
-  margin-left: auto;
-
-  text-align: $textAlign;
 }
 
 @mixin main-button-hover($colorAccentHover: $background-color-accent-hover) {
@@ -21,25 +10,20 @@
   }
 }
 
-@mixin socialList($colorSocialList) {
+@mixin flexCenter($justify-content: center, $align-items: center) {
   display: flex;
-  color: $colorSocialList;
+  justify-content: $justify-content;
+  align-items: $align-items;
 }
 
-@mixin socialLink($bgcSocialLink) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@mixin colorLink-focus(
+  $colorFocus: $color-accent,
+  $colorLink: $color-link-main
+) {
+  color: $colorLink;
 
-  border-radius: 50%;
-
-  width: 100%;
-  height: 100%;
-
-  color: inherit;
-  fill: currentColor;
-  background-color: $bgcSocialLink;
-
-  transition: color $time-main $timing-function-main,
-    background-color $time-main $timing-function-main;
+  &:hover,
+  &:focus {
+    color: $colorFocus;
+  }
 }

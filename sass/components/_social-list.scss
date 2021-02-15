@@ -1,38 +1,3 @@
 .social-list {
-  &-team {
-    @include socialList($color-link-main);
-  }
-
-  &-footer {
-    @include socialList($color-light-main);
-  }
-}
-
-.social-item {
-  width: 44px;
-  height: 44px;
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
-}
-
-.social-link {
-  &-team {
-    @include socialLink($color-light-main);
-
-    &:hover,
-    &:focus {
-      background-color: $color-accent;
-      color: $color-light-main;
-    }
-  }
-
-  &-footer {
-    @include socialLink($background-color-footer-social-link);
-
-    &:hover,
-    &:focus {
-      background-color: $color-accent;
-    }
-  }
+  display: flex;
 }

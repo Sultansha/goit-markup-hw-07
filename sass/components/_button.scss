@@ -1,9 +1,11 @@
 .main-button {
   @extend %main-button;
+  @extend %color-button-accent;
   @include main-button-hover();
 }
 
 .main-button-no-hover {
   @extend %main-button;
   @include main-button-hover($color-accent);
+  @extend %color-button-accent;
 }
